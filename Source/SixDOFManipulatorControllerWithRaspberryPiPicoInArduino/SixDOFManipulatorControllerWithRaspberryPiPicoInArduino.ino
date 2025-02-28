@@ -2,17 +2,15 @@
 #include <Arduino.h>
 // Including Default Arduino Library For Working With Servo Motors
 #include <Servo.h>
-// Including Default Arduino Library For Working With Alphanumeric Liquid Crystal Displays
-#include <LiquidCrystal.h>
 
 // Definations Of Some Of The Useful Value For Using Servo Motors Of The Manipulator
 // Definations Of The Physical PIN Which Are Using For Servo Motors
-#define ServoMotorOne_PIN (int)0
-#define ServoMotorTwo_PIN (int)1
-#define ServoMotorThree_PIN (int)2
-#define ServoMotorFour_PIN (int)3
-#define ServoMotorFive_PIN (int)4
-#define ServoMotorSix_PIN (int)5
+#define ServoMotorOne_PIN (int)2
+#define ServoMotorTwo_PIN (int)3
+#define ServoMotorThree_PIN (int)4
+#define ServoMotorFour_PIN (int)5
+#define ServoMotorFive_PIN (int)6
+#define ServoMotorSix_PIN (int)7
 // Definations Of The Start Position Of The Servo Motors
 #define ServoMotorOne_START (int)90
 #define ServoMotorTwo_START (int)90
@@ -35,37 +33,13 @@
 #define ServoMotorFive_MAXIMUM (int)180
 #define ServoMotorSix_MAXIMUM (int)180
 
-// Declaring Some Definations For Using Push Button To Managing Servo Motors
-// Declaring Some Definations Which Are Referenced To The Physical Pins That Are Using By Push Buttons
-#define PushButtonReset_PIN (uint8_t)6
-#define PushButtonLeft_PIN (uint8_t)7
-#define PushButtonSelect_PIN (uint8_t)8
-#define PushButtonRight_PIN (uint8_t)9
-// Declaring Some Definations For Managing Status Of Push Buttons Signals
-#define PushButtonReset_ENABLE (uint8_t) LOW
-#define PushButtonReset_DISABLE (uint8_t) HIGH
+// Declaring Some Definations For Working With Serial Port
+#define SerialPortTX_PIN (uint8_t)0
+#define SerialPortRX_PIN (uint8_t)1
+#define SerialPortBuffer_SIZE (uint16_t)512
+#define SerialPortBaudrate_VALUE (uint32_t)115200
 
-#define PushButtonLeft_ENABLE (uint8_t) LOW
-#define PushButtonLeft_DISABLE (uint8_t) HIGH
-
-#define PushButtonSelect_ENABLE (uint8_t) LOW
-#define PushButtonSelect_DISABLE (uint8_t) HIGH
-
-#define PushButtonRight_ENABLE (uint8_t) LOW
-#define PushButtonRight_DISABLE (uint8_t) HIGH
-
-// Declaring Some Definations For Physical Pins Of The Alphanumeric Liquid Crystal Display
-#define Display_RS_PIN (uint8_t)10
-#define Display_EN_PIN (uint8_t)11
-#define Display_D4_PIN (uint8_t)12
-#define Display_D5_PIN (uint8_t)13
-#define Display_D6_PIN (uint8_t)14
-#define Display_D7_PIN (uint8_t)15
-// Declaring Some Values For Configuring The Alphanumeric LCD
-#define Display_ROWS (uint8_t)2
-#define Display_COLUMNS (uint8_t)16
-
-// Declaring Some Value For Managing Selected Servo Motors
+// Declaring Some Definations For Hnadling The SelectedServoMotor From User
 #define NumberOfNoneServoMotor (uint8_t)0
 #define NumberOfServoMotorOne (uint8_t)1
 #define NumberOfServoMotorTwo (uint8_t)2
@@ -73,6 +47,26 @@
 #define NumberOfServoMotorFour (uint8_t)4
 #define NumberOfServoMotorFive (uint8_t)5
 #define NumberOfServoMotorSix (uint8_t)6
+
+// Declaring Some Difinations For Handling The Operation Of The SelectedServoMotor From User
+#define None_OPERATION (uint8_t)0
+#define Homing_OPERATION (uint8_t)1
+#define Increasing_OPERATION (uint8_t)2
+#define Decreasing_OPERATION (uint8_t)3
+#define HomingAll_OPERATION (uint8_t)4
+
+// Declaring Some Difinations For Handling Incoming Command From The User
+#define None_COMMAND ""
+#define Homing_COMMAND "Homing"
+#define Increasing_COMMAND "Increasing"
+#define Decreasing_COMMAND "Decreasing"
+#define HomingAll_COMMAND "HomingAll"
+#define SelectingServoMotorOne_COMMAND "ServoMotorOne"
+#define SelectingServoMotorTwo_COMMAND "ServoMotorTwo"
+#define SelectingServoMotorThree_COMMAND "ServoMotorThree"
+#define SelectingServoMotorFour_COMMAND "ServoMotorFour"
+#define SelectingServoMotorFive_COMMAND "ServoMotorFive"
+#define SelectingServoMotorSix_COMMAND "ServooMotorSix"
 
 // Declaring Servo Objects For Using Servo Motors
 Servo ServoMotorOne;
@@ -82,23 +76,23 @@ Servo ServoMotorFour;
 Servo ServoMotorFive;
 Servo ServoMotorSix;
 
-// Declaring LiquidCrystal Object As Main Display For Monitoring Data In Reality
-LiquidCrystal Display((uint8_t)Display_RS_PIN, (uint8_t)Display_EN_PIN, (uint8_t)Display_D4_PIN, (uint8_t)Display_D5_PIN, (uint8_t)Display_D6_PIN, (uint8_t)Display_D7_PIN);
-
-// This Fuction Will Move All Servo Motors To Their Start Position
+// This Function Will Move The Servo Motor To Its Start Position
 void HomeAllServoMotors(void);
 
 // This Function Will Move The Servo Motor To Its Start Position
-void HomeServoMotor(Servo, int);
+void HomeServoMotor(Servo, const char *, const char *, int);
 
-// This Function Will Increase Angle Of A Servo Motor According To Given Parameters And Printing Two Messages On Display According To The Input Texts
-void IncreaseAngleServoMotor(Servo, LiquidCrystal, const char *, const char *, int, int, unsigned long int);
+// This Function Will Increase Angle Of A Servo Motor According To Given Parameters
+void IncreaseAngleServoMotor(Servo, int, int, unsigned long int);
 
-// This Function Will Decrease Angle Of A Servo Motor According To Given Parameters And Printing Two Messages On Display According To The Input Texts
-void DecreaseAngleServoMotor(Servo, LiquidCrystal, const char *, const char *, int, int, unsigned long int);
+// This Function Will Decrease Angle Of A Servo Motor According To Given Parameters
+void DecreaseAngleServoMotor(Servo, int, int, unsigned long int);
 
 // Declaring A Variable For Managing Current Selected Servo Motor By User
 uint8_t SelectedServoMotor = (uint8_t)NumberOfNoneServoMotor;
+
+// Declaring A Variable For Managing Current Operation Of Selected Servo Motor
+uint8_t OperationOfSelectedServoMotor = (uint8_t)None_OPERATION;
 
 // Declaring A Variable For Storing Number Of Angles That Move In Each Time Of Movement
 uint8_t ServoMotorMovementAngle = (uint8_t)1;
@@ -107,20 +101,20 @@ uint8_t ServoMotorMovementAngle = (uint8_t)1;
 uint8_t ServoMotorMovementDelay = (uint8_t)50;
 
 // Declaring A Temperature Array Of Characters For Handling The Text That Will Print On The Display
-char TemperatureArray[17] = "                ";
+char TemperatureArray[18] = "                 ";
 
 // Declaring A Temperature Variable For Storing The Current Angle Of Each Servo Motor In Its Own Operation
 int TemperatureAngle = (int)0;
 
-void setup(void) {
-  // Configuring Push Button Pins For Using In Physical Circuit
-  pinMode((uint8_t)PushButtonReset_PIN, (uint8_t)INPUT_PULLUP);
-  pinMode((uint8_t)PushButtonLeft_PIN, (uint8_t)INPUT_PULLUP);
-  pinMode((uint8_t)PushButtonSelect_PIN, (uint8_t)INPUT_PULLUP);
-  pinMode((uint8_t)PushButtonRight_PIN, (uint8_t)INPUT_PULLUP);
+// Declaring A String For Handling Incoming Data That Come From Serial Port
+String IncommingData = String();
 
-  // Configuring The Display For Starting Using Of It
-  Display.begin((uint8_t)Display_COLUMNS, (uint8_t)Display_ROWS);
+void setup(void) {
+  // Configuring SerialPort
+  Serial1.setTX(SerialPortTX_PIN);
+  Serial1.setRX(SerialPortRX_PIN);
+  Serial1.setFIFOSize(SerialPortBuffer_SIZE);
+  Serial1.begin(SerialPortBaudrate_VALUE);
 
   // Attaching Physical Pins To The Servo Objects For Using In Reality
   while (ServoMotorOne.attached() == (bool)false)
@@ -141,131 +135,515 @@ void setup(void) {
 }
 
 void loop(void) {
-  // Checking For Clicking Reset Push Button And After Clicking Will Move All Servo Motors To Their Start Position
-  if (digitalRead(PushButtonReset_PIN) == PushButtonReset_ENABLE) {
-    delay((unsigned long int)250);
-    if (digitalRead(PushButtonReset_PIN) == PushButtonReset_DISABLE) {
+  // Check The Input Buffer Until A Data Recived
+  if (Serial1.available()) {
+    // Waiting For Compeleting Reciving Operation
+    delayMicroseconds((unsigned long int)1000);
+
+    // Reading A String From The Input Buffer
+    IncommingData = String(Serial1.readString());
+
+    // Handling The Incoming Data For Doing Its Operation
+    // Handling If The Incoming Data Is (None_COMMAND)
+    if ((IncommingData.c_str() == (String(None_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfNoneServoMotor;
+      OperationOfSelectedServoMotor = None_OPERATION;
+    }
+    // Handling If The Incoming Data Is (Homing_COMMAND)
+    else if ((IncommingData.c_str() == (String(Homing_COMMAND).c_str()))) {
+      if (SelectedServoMotor != NumberOfNoneServoMotor) {
+        OperationOfSelectedServoMotor = Homing_OPERATION;
+      } else {
+        OperationOfSelectedServoMotor = None_OPERATION;
+        Serial1.println("Error : Please First Select A Servo Motor And Then Send Your Operation");
+        if (Serial1.availableForWrite()) {
+          Serial1.flush();
+        }
+      }
+    }
+    // Handling If The Incoming Data Is (Increasing_COMMAND)
+    else if ((IncommingData.c_str() == (String(Increasing_COMMAND).c_str()))) {
+      if (SelectedServoMotor != NumberOfNoneServoMotor) {
+        OperationOfSelectedServoMotor = Increasing_OPERATION;
+      } else {
+        OperationOfSelectedServoMotor = None_OPERATION;
+        Serial1.println("Error : Please First Select A Servo Motor And Then Send Your Operation");
+        if (Serial1.availableForWrite()) {
+          Serial1.flush();
+        }
+      }
+    }
+    // Handling If The Incoming Data Is (Decreasing_COMMAND)
+    else if ((IncommingData.c_str() == (String(Decreasing_COMMAND).c_str()))) {
+      if (SelectedServoMotor != NumberOfNoneServoMotor) {
+        OperationOfSelectedServoMotor = Decreasing_OPERATION;
+      } else {
+        OperationOfSelectedServoMotor = None_OPERATION;
+        Serial1.println("Error : Please First Select A Servo Motor And Then Send Your Operation");
+        if (Serial1.availableForWrite()) {
+          Serial1.flush();
+        }
+      }
+    }
+    // Handling If The Incoming Data Is (HomingAll_COMMAND)
+    else if ((IncommingData.c_str() == (String(HomingAll_COMMAND).c_str()))) {
+      OperationOfSelectedServoMotor = HomingAll_OPERATION;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorOne_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorOne_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfServoMotorOne;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorTwo_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorTwo_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfServoMotorTwo;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorThree_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorThree_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfServoMotorThree;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorFour_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorFour_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfServoMotorFour;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorFive_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorFive_COMMAND).c_str()))) {
+      SelectedServoMotor = NumberOfServoMotorFive;
+    }
+    // Handling If The Incoming Data Is (SelectingServoMotorSix_COMMAND)
+    else if ((IncommingData.c_str() == (String(SelectingServoMotorSix_COMMAND).c_str()))) {
+    }
+    // Handling If The Incoming Data Is Not Valid Command
+    else {
+      // Sending And Error Message For Invalid Command And Guide of Valid Messages On The Serial Port
+      Serial1.println("Error : Please Enter A Valid Command.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("Valid Command Are : ");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("Homming : Set Selected ServoMotor To Its Home Position.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("Increasing : Increasing Angle Of Selected ServoMotor.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("Decreasing : Decreasing Angle Of Selected ServoMotor.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("HommingAll : Set All ServoMotors To Their Home Position.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorOne : Select ServoMotorOne.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorTwo : Select ServoMotorTwo.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorThree : Select ServoMotorThree.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorFour : Select ServoMotorFour.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorFive : Select ServoMotorFive.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+      Serial1.println("ServoMotorSix : Select ServoMotorSix.");
+      if (Serial1.availableForWrite()) {
+        Serial1.flush();
+      }
+    }
+    // Handling Operations For All ServoMotors
+    switch (SelectedServoMotor) {
+      // Handling If There Is Not Any Selected ServoMotors
+      case (NumberOfNoneServoMotor):
+        {
+          break;
+        }
+      // Handling If ServoMotorOne Is Selected
+      case (NumberOfServoMotorOne):
+        {
+          // Hadling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorOne, ServoMotorOne_START);
+                TemperatureAngle = ServoMotorOne.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorOne_MINIMUM, TemperatureAngle, ServoMotorOne_MAXIMUM);
+                Serial1.println("ServoMotorOne");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorOne, ServoMotorMovementAngle, ServoMotorOne_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorOne.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorOne_MINIMUM, TemperatureAngle, ServoMotorOne_MAXIMUM);
+                Serial1.println("ServoMotorOne");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorOne, ServoMotorMovementAngle, ServoMotorOne_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorOne.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorOne_MINIMUM, TemperatureAngle, ServoMotorOne_MAXIMUM);
+                Serial1.println("ServoMotorOne");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+        // Handling If ServoMotorTwo Is Selected
+      case (NumberOfServoMotorTwo):
+        {
+          // Handling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorTwo, ServoMotorTwo_START);
+                TemperatureAngle = ServoMotorTwo.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorTwo_MINIMUM, TemperatureAngle, ServoMotorTwo_MAXIMUM);
+                Serial1.println("ServoMotorTwo");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorTwo, ServoMotorMovementAngle, ServoMotorTwo_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorTwo.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorTwo_MINIMUM, TemperatureAngle, ServoMotorTwo_MAXIMUM);
+                Serial1.println("ServoMotorTwo");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorTwo, ServoMotorMovementAngle, ServoMotorTwo_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorTwo.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorTwo_MINIMUM, TemperatureAngle, ServoMotorTwo_MAXIMUM);
+                Serial1.println("ServoMotorTwo");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+        // Handling If ServoMotorThree Is Selected
+      case (NumberOfServoMotorThree):
+        {
+          // Handling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorThree, ServoMotorThree_START);
+                TemperatureAngle = ServoMotorThree.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorThree_MINIMUM, TemperatureAngle, ServoMotorThree_MAXIMUM);
+                Serial1.println("ServoMotorThree");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorThree, ServoMotorMovementAngle, ServoMotorThree_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorThree.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorThree_MINIMUM, TemperatureAngle, ServoMotorThree_MAXIMUM);
+                Serial1.println("ServoMotorThree");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorThree, ServoMotorMovementAngle, ServoMotorThree_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorThree.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorThree_MINIMUM, TemperatureAngle, ServoMotorThree_MAXIMUM);
+                Serial1.println("ServoMotorThree");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+        // Handling If ServoMotorFour Is Selected
+      case (NumberOfServoMotorFour):
+        {
+          // Handling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorFour, ServoMotorFour_START);
+                TemperatureAngle = ServoMotorFour.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFour_MINIMUM, TemperatureAngle, ServoMotorFour_MAXIMUM);
+                Serial1.println("ServoMotorFour");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorFour, ServoMotorMovementAngle, ServoMotorFour_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorFour.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFour_MINIMUM, TemperatureAngle, ServoMotorFour_MAXIMUM);
+                Serial1.println("ServoMotorFour");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorFour, ServoMotorMovementAngle, ServoMotorFour_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorFour.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFour_MINIMUM, TemperatureAngle, ServoMotorFour_MAXIMUM);
+                Serial1.println("ServoMotorFour");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+        // Handling If ServoMotorFive Is Selected
+      case (NumberOfServoMotorFive):
+        {
+          // Handling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorFive, ServoMotorFive_START);
+                TemperatureAngle = ServoMotorFive.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFive_MINIMUM, TemperatureAngle, ServoMotorFive_MAXIMUM);
+                Serial1.println("ServoMotorFive");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorFive, ServoMotorMovementAngle, ServoMotorFive_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorFive.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFive_MINIMUM, TemperatureAngle, ServoMotorFive_MAXIMUM);
+                Serial1.println("ServoMotorFive");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorFive, ServoMotorMovementAngle, ServoMotorFive_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorFive.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorFive_MINIMUM, TemperatureAngle, ServoMotorFive_MAXIMUM);
+                Serial1.println("ServoMotorFive");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+        // Handling If ServoMotorSix Is Selected
+      case (NumberOfServoMotorSix):
+        {
+          // Handling Operation For The Selected Servo Motor
+          switch (OperationOfSelectedServoMotor) {
+            // Handling If There Is Not Any Operation
+            case (None_OPERATION):
+              {
+                break;
+              }
+            // Handling If HomingOperation Was Called
+            case (Homing_OPERATION):
+              {
+                HomeServoMotor(ServoMotorSix, ServoMotorSix_START);
+                TemperatureAngle = ServoMotorSix.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorSix_MINIMUM, TemperatureAngle, ServoMotorSix_MAXIMUM);
+                Serial1.println("ServoMotorSix");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If IncreasingOperation Was Called
+            case (Increasing_OPERATION):
+              {
+                IncreaseAngleServoMotor(ServoMotorSix, ServoMotorMovementAngle, ServoMotorSix_MAXIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorSix.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorSix_MINIMUM, TemperatureAngle, ServoMotorSix_MAXIMUM);
+                Serial1.println("ServoMotorSix");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+            // Handling If DecreasingOperation Was Called
+            case (Decreasing_OPERATION):
+              {
+                DecreaseAngleServoMotor(ServoMotorSix, ServoMotorMovementAngle, ServoMotorSix_MINIMUM, ServoMotorMovementDelay);
+                TemperatureAngle = ServoMotorSix.read();
+                sprintf(TemperatureArray, "%03d <= %03d <= %03d", ServoMotorSix_MINIMUM, TemperatureAngle, ServoMotorSix_MAXIMUM);
+                Serial1.println("ServoMotorSix");
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                Serial1.println(TemperatureArray);
+                if (Serial1.availableForWrite()) {
+                  Serial1.flush();
+                }
+                break;
+              }
+          }
+          break;
+        }
+    }
+    // Handling If The Operation Is Homing All ServoMotors
+    if ((OperationOfSelectedServoMotor == HomingAll_OPERATION)) {
       HomeAllServoMotors();
     }
-  }
-
-  // Checking For Clicking Select Push Button And After Clicking Will Select A Different Servo Motor In Available Range
-  if (digitalRead(PushButtonSelect_PIN) == PushButtonSelect_ENABLE) {
-    delay((unsigned long int)250);
-    if (digitalRead(PushButtonSelect_PIN) == PushButtonSelect_DISABLE) {
-      if (SelectedServoMotor <= NumberOfServoMotorSix)
-        SelectedServoMotor += (uint8_t)1;
-      else
-        SelectedServoMotor = NumberOfNoneServoMotor;
-    }
-  }
-
-  switch (SelectedServoMotor) {
-    case NumberOfNoneServoMotor:
-      {
-        Display.setCursor((uint8_t)0, (uint8_t)0);
-        Display.print("ServoMotor: None");
-        Display.setCursor((uint8_t)0, (uint8_t)1);
-        Display.print("                ");
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorOne
-    case NumberOfServoMotorOne:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorOne.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorOne_MINIMUM, TemperatureAngle, ServoMotorOne_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorOne, Display, " ServoMotor : 1 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorOne_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorOne.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorOne_MINIMUM, TemperatureAngle, ServoMotorOne_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorOne, Display, " ServoMotor : 1 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorOne_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorTwo
-    case NumberOfServoMotorTwo:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorTwo.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorTwo_MINIMUM, TemperatureAngle, ServoMotorTwo_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorTwo, Display, " ServoMotor : 2 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorTwo_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorTwo.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorTwo_MINIMUM, TemperatureAngle, ServoMotorTwo_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorTwo, Display, " ServoMotor : 2 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorTwo_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorThree
-    case NumberOfServoMotorThree:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorThree.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorThree_MINIMUM, TemperatureAngle, ServoMotorThree_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorThree, Display, " ServoMotor : 3 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorThree_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorThree.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorThree_MINIMUM, TemperatureAngle, ServoMotorThree_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorThree, Display, " ServoMotor : 3 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorThree_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorFour
-    case NumberOfServoMotorFour:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorFour.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorFour_MINIMUM, TemperatureAngle, ServoMotorFour_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorFour, Display, " ServoMotor : 4 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorFour_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorFour.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorFour_MINIMUM, TemperatureAngle, ServoMotorFour_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorFour, Display, " ServoMotor : 4 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorFour_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorFive
-    case NumberOfServoMotorFive:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorFive.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorFive_MINIMUM, TemperatureAngle, ServoMotorFive_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorFive, Display, " ServoMotor : 5 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorFive_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorFive.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorFive_MINIMUM, TemperatureAngle, ServoMotorFive_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorFive, Display, " ServoMotor : 5 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorFive_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
-    // Custom Controlling Position Of The ServoMotorSix
-    case NumberOfServoMotorSix:
-      {
-        while (digitalRead(PushButtonRight_PIN) == PushButtonRight_ENABLE) {
-          TemperatureAngle = ServoMotorSix.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorSix_MINIMUM, TemperatureAngle, ServoMotorSix_MAXIMUM);
-          IncreaseAngleServoMotor(ServoMotorSix, Display, " ServoMotor : 6 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorSix_MAXIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-        while (digitalRead(PushButtonLeft_PIN) == PushButtonLeft_ENABLE) {
-          TemperatureAngle = ServoMotorSix.read();
-          sprintf(TemperatureArray, "  %3d<=%3d<=%3d ", ServoMotorSix_MINIMUM, TemperatureAngle, ServoMotorSix_MAXIMUM);
-          DecreaseAngleServoMotor(ServoMotorSix, Display, " ServoMotor : 6 ", TemperatureArray, (int)ServoMotorMovementAngle, (int)ServoMotorSix_MINIMUM, (unsigned long int)ServoMotorMovementDelay);
-        }
-
-        break;
-      }
+    // Reseting The Operation Of The Selected ServoMotor
+    OperationOfSelectedServoMotor = None_OPERATION;
   }
 }
 
@@ -284,8 +662,8 @@ void HomeServoMotor(Servo ServoMotor, int StartPosition) {
   ServoMotor.write((int)StartPosition);
 }
 
-// This Function Will Increase Angle Of A Servo Motor According To Given Parameters And Printing Two Messages On Display According To The Input Texts
-void IncreaseAngleServoMotor(Servo ServoMotor, LiquidCrystal Display, const char *FirstLine, const char *SecondLine, int StepOfAngle, int MaximumAngle, unsigned long int TimeBetweenAngle) {
+// This Function Will Increase Angle Of A Servo Motor According To Given Parameters
+void IncreaseAngleServoMotor(Servo ServoMotor, int StepOfAngle, int MaximumAngle, unsigned long int TimeBetweenAngle) {
   int TheAngle = (int)0;
   TheAngle = ServoMotor.read();
   if (TheAngle <= MaximumAngle) {
@@ -296,16 +674,12 @@ void IncreaseAngleServoMotor(Servo ServoMotor, LiquidCrystal Display, const char
     ServoMotor.write(TheAngle);
   }
 
+  // Waiting Between Each Angle Movement
   delay(TimeBetweenAngle);
-
-  Display.setCursor((uint8_t)0, (uint8_t)0);
-  Display.print(FirstLine);
-  Display.setCursor((uint8_t)1, (uint8_t)0);
-  Display.print(SecondLine);
 }
 
-// This Function Will Decrease Angle Of A Servo Motor According To Given Parameters And Printing Two Messages On Display According To The Input Texts
-void DecreaseAngleServoMotor(Servo ServoMotor, LiquidCrystal Display, const char *FirstLine, const char *SecondLine, int StepOfAngle, int MinimumAngle, unsigned long int TimeBetweenAngle) {
+// This Function Will Decrease Angle Of A Servo Motor According To Given Parameters
+void DecreaseAngleServoMotor(Servo ServoMotor, int StepOfAngle, int MinimumAngle, unsigned long int TimeBetweenAngle) {
   int TheAngle = (int)0;
   TheAngle = ServoMotor.read();
   if (TheAngle >= MinimumAngle) {
@@ -316,10 +690,6 @@ void DecreaseAngleServoMotor(Servo ServoMotor, LiquidCrystal Display, const char
     ServoMotor.write(TheAngle);
   }
 
+  // Waiting Between Each Angle Movement
   delay(TimeBetweenAngle);
-
-  Display.setCursor((uint8_t)0, (uint8_t)0);
-  Display.print(FirstLine);
-  Display.setCursor((uint8_t)1, (uint8_t)0);
-  Display.print(SecondLine);
 }
