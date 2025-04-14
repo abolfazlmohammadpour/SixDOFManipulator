@@ -1,0 +1,580 @@
+Added Component: Designator=C1(WCAP-ATG5_D10H12.5)
+Add component (AddParameter): Name = "Capacitance"; Value = "1000µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "10mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "160µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020375017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "540mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDF125102M016DSPA9B000"; VariantName = "[No Variations]"
+Added Component: Designator=C2(WCAP-ATG5_D5H11)
+Add component (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "3µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020372001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "35mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDC110100M016DSPA3B000"; VariantName = "[No Variations]"
+Added Component: Designator=C3(WCAP-ATG5_D10H12.5)
+Add component (AddParameter): Name = "Capacitance"; Value = "1000µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "10mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "160µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020375017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "540mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDF125102M016DSPA9B000"; VariantName = "[No Variations]"
+Added Component: Designator=C4(WCAP-ATG5_D5H11)
+Add component (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "3µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020372001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "35mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDC110100M016DSPA3B000"; VariantName = "[No Variations]"
+Added Component: Designator=C5(WCAP-ATG5_D10H12.5)
+Add component (AddParameter): Name = "Capacitance"; Value = "1000µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020375017?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "10mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "160µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020375017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "540mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDF125102M016DSPA9B000"; VariantName = "[No Variations]"
+Added Component: Designator=C6(WCAP-ATG5_D5H11)
+Add component (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860020372001?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "3µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "860020372001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ATG5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "35mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ATDC110100M016DSPA3B000"; VariantName = "[No Variations]"
+Added Component: Designator=D1(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D2(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D5(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(DIOAD1060W80L520D270)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NTE Electronics, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 NTE Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4007/NTE+Electronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1(CUI_PJ-057AH)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/PJ-057AH/Same+Sky/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Same Sky"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PJ-057AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/PJ-057AH/Same+Sky/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(SAMTEC_TSW-108-07-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-108-07-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(SAMTEC_SSW-108-01-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SSW-108-01-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(SAMTEC_TSW-108-07-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-108-07-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(SAMTEC_SSW-108-01-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SSW-108-01-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(SAMTEC_TSW-108-07-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-108-07-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J7(SAMTEC_SSW-108-01-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SSW-108-01-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J8(SAMTEC_TSW-124-07-G-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-124-07-G-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J9(SAMTEC_SSW-124-01-X-D)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SSW-124-01-X-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESAD700W45L350D185)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3-1623927-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3-1623927-1/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(TO254P1054X470X1955-3)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM338T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220-3 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(TO254P1054X470X1955-3)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM338T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220-3 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U3(TO254P1054X470X1955-3)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM338T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220-3 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM338T/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3.3V Pin=C1-1
+Added Pin To Net: NetName=0V Pin=C1-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=0V Pin=C2-2
+Added Pin To Net: NetName=5V Pin=C3-1
+Added Pin To Net: NetName=0V Pin=C3-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=0V Pin=C4-2
+Added Pin To Net: NetName=6V Pin=C5-1
+Added Pin To Net: NetName=0V Pin=C5-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=0V Pin=C6-2
+Added Pin To Net: NetName=3.3V Pin=D1-A
+Added Pin To Net: NetName=12V Pin=D1-C
+Added Pin To Net: NetName=NetC2_1 Pin=D2-A
+Added Pin To Net: NetName=3.3V Pin=D2-C
+Added Pin To Net: NetName=5V Pin=D3-A
+Added Pin To Net: NetName=12V Pin=D3-C
+Added Pin To Net: NetName=NetC4_1 Pin=D4-A
+Added Pin To Net: NetName=5V Pin=D4-C
+Added Pin To Net: NetName=6V Pin=D5-A
+Added Pin To Net: NetName=12V Pin=D5-C
+Added Pin To Net: NetName=NetC6_1 Pin=D6-A
+Added Pin To Net: NetName=6V Pin=D6-C
+Added Pin To Net: NetName=12V Pin=J1-1
+Added Pin To Net: NetName=0V Pin=J1-2
+Added Pin To Net: NetName=0V Pin=J1-3
+Added Pin To Net: NetName=3.3V Pin=J2-01
+Added Pin To Net: NetName=3.3V Pin=J2-02
+Added Pin To Net: NetName=3.3V Pin=J2-03
+Added Pin To Net: NetName=3.3V Pin=J2-04
+Added Pin To Net: NetName=3.3V Pin=J2-05
+Added Pin To Net: NetName=3.3V Pin=J2-06
+Added Pin To Net: NetName=3.3V Pin=J2-07
+Added Pin To Net: NetName=3.3V Pin=J2-08
+Added Pin To Net: NetName=3.3V Pin=J2-09
+Added Pin To Net: NetName=3.3V Pin=J2-10
+Added Pin To Net: NetName=3.3V Pin=J2-11
+Added Pin To Net: NetName=3.3V Pin=J2-12
+Added Pin To Net: NetName=3.3V Pin=J2-13
+Added Pin To Net: NetName=3.3V Pin=J2-14
+Added Pin To Net: NetName=3.3V Pin=J2-15
+Added Pin To Net: NetName=3.3V Pin=J2-16
+Added Pin To Net: NetName=3.3V Pin=J3-01
+Added Pin To Net: NetName=3.3V Pin=J3-02
+Added Pin To Net: NetName=3.3V Pin=J3-03
+Added Pin To Net: NetName=3.3V Pin=J3-04
+Added Pin To Net: NetName=3.3V Pin=J3-05
+Added Pin To Net: NetName=3.3V Pin=J3-06
+Added Pin To Net: NetName=3.3V Pin=J3-07
+Added Pin To Net: NetName=3.3V Pin=J3-08
+Added Pin To Net: NetName=3.3V Pin=J3-09
+Added Pin To Net: NetName=3.3V Pin=J3-10
+Added Pin To Net: NetName=3.3V Pin=J3-11
+Added Pin To Net: NetName=3.3V Pin=J3-12
+Added Pin To Net: NetName=3.3V Pin=J3-13
+Added Pin To Net: NetName=3.3V Pin=J3-14
+Added Pin To Net: NetName=3.3V Pin=J3-15
+Added Pin To Net: NetName=3.3V Pin=J3-16
+Added Pin To Net: NetName=NetC2_1 Pin=R1-1
+Added Pin To Net: NetName=3.3V Pin=R1-2
+Added Pin To Net: NetName=0V Pin=R2-1
+Added Pin To Net: NetName=NetC2_1 Pin=R2-2
+Added Pin To Net: NetName=NetC4_1 Pin=R3-1
+Added Pin To Net: NetName=5V Pin=R3-2
+Added Pin To Net: NetName=0V Pin=R4-1
+Added Pin To Net: NetName=NetC4_1 Pin=R4-2
+Added Pin To Net: NetName=NetC6_1 Pin=R5-1
+Added Pin To Net: NetName=6V Pin=R5-2
+Added Pin To Net: NetName=0V Pin=R6-1
+Added Pin To Net: NetName=NetC6_1 Pin=R6-2
+Added Pin To Net: NetName=NetC2_1 Pin=U1-1
+Added Pin To Net: NetName=3.3V Pin=U1-2
+Added Pin To Net: NetName=12V Pin=U1-3
+Added Pin To Net: NetName=NetC4_1 Pin=U2-1
+Added Pin To Net: NetName=5V Pin=U2-2
+Added Pin To Net: NetName=12V Pin=U2-3
+Added Pin To Net: NetName=NetC6_1 Pin=U3-1
+Added Pin To Net: NetName=6V Pin=U3-2
+Added Pin To Net: NetName=12V Pin=U3-3
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-01
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-02
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-03
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-04
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-05
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-06
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-07
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-08
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-09
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-10
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-11
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-12
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-13
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-14
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-15
+Added Pin To Net: NetName=NetJ4_01 Pin=J4-16
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-01
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-02
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-03
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-04
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-05
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-06
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-07
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-08
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-09
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-10
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-11
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-12
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-13
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-14
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-15
+Added Pin To Net: NetName=NetJ4_01 Pin=J5-16
+Added Net: Name=NetJ4_01
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-01
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-02
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-03
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-04
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-05
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-06
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-07
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-08
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-09
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-10
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-11
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-12
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-13
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-14
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-15
+Added Pin To Net: NetName=NetJ6_01 Pin=J6-16
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-01
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-02
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-03
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-04
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-05
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-06
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-07
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-08
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-09
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-10
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-11
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-12
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-13
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-14
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-15
+Added Pin To Net: NetName=NetJ6_01 Pin=J7-16
+Added Net: Name=NetJ6_01
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-01
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-03
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-05
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-07
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-09
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-11
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-13
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-15
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-17
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-19
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-21
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-23
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-25
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-27
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-29
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-31
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-33
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-35
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-37
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-39
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-41
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-43
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-45
+Added Pin To Net: NetName=NetJ8_01 Pin=J8-47
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-01
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-03
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-05
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-07
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-09
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-11
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-13
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-15
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-17
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-19
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-21
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-23
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-25
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-27
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-29
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-31
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-33
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-35
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-37
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-39
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-41
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-43
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-45
+Added Pin To Net: NetName=NetJ8_01 Pin=J9-47
+Added Net: Name=NetJ8_01
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-02
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-04
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-06
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-08
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-10
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-12
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-14
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-16
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-18
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-20
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-22
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-24
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-26
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-28
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-30
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-32
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-34
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-36
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-38
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-40
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-42
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-44
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-46
+Added Pin To Net: NetName=NetJ8_02 Pin=J8-48
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-02
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-04
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-06
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-08
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-10
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-12
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-14
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-16
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-18
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-20
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-22
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-24
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-26
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-28
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-30
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-32
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-34
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-36
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-38
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-40
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-42
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-44
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-46
+Added Pin To Net: NetName=NetJ8_02 Pin=J9-48
+Added Net: Name=NetJ8_02
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C1 1000µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C2 10µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C3 1000µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C4 10µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C5 1000µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component C6 10µF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D1 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D2 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D3 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D4 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D5 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component D6 1N4007
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J1 PJ-057AH
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J2 TSW-108-07-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J3 SSW-108-01-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J4 TSW-108-07-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J5 SSW-108-01-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J6 TSW-108-07-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J7 SSW-108-01-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J8 TSW-124-07-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J9 SSW-124-01-X-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R1 1k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R2 1.64k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R3 1k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R4 1k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R5 1k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component R6 3.8k
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component U1 LM338T-3.3V
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component U2 LM338T-5V
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component U3 LM338T-6V
