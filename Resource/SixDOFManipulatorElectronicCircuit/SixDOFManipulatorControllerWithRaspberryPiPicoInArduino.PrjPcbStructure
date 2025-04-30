@@ -1,1 +1,3 @@
-Record=TopLevelDocument|FileName=PowerSupply_Schematic.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Controller_Schematic.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Controller_Schematic.SchDoc|FileName=LogicShifters_Schematic.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Controller_Schematic.SchDoc|FileName=PowerSupply_Schematic.SchDoc|SheetNumber=1
