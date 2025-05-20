@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=Q1 NewDesignator=Q16
+Change Component Designator: OldDesignator=Q2 NewDesignator=Q15
+Change Component Designator: OldDesignator=Q3 NewDesignator=Q14
+Change Component Designator: OldDesignator=Q4 NewDesignator=Q13
+Change Component Designator: OldDesignator=Q5 NewDesignator=Q12
+Change Component Designator: OldDesignator=Q6 NewDesignator=Q11
+Change Component Designator: OldDesignator=Q7 NewDesignator=Q10
+Change Component Designator: OldDesignator=Q8 NewDesignator=Q9
+Change Component Designator: OldDesignator=Q9 NewDesignator=Q8
+Change Component Designator: OldDesignator=Q10 NewDesignator=Q7
+Change Component Designator: OldDesignator=Q11 NewDesignator=Q6
+Change Component Designator: OldDesignator=Q12 NewDesignator=Q5
+Change Component Designator: OldDesignator=Q13 NewDesignator=Q4
+Change Component Designator: OldDesignator=Q14 NewDesignator=Q3
+Change Component Designator: OldDesignator=Q15 NewDesignator=Q2
+Change Component Designator: OldDesignator=Q16 NewDesignator=Q1
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component R8 10k
+Added Member To Class: ClassName=Controller_Schematic Member=Component S5 FSM8JH
