@@ -1,0 +1,82 @@
+Change Component Description : Designator=U4 Old Description=Raspberry Pi Board, Arm Cortex-M0+; Core Architecture:Arm; Core Sub-Architecture:Cortex-M0+; Kit Contents:Raspberry Pi Pico Board; No. Of Bits:32Bit; Silicon Core Number:Rp2040; Silicon Manufacturer:Raspberry Pi New Description=Raspberry Pi Board, Arm Cortex-M0+; Core Architecture:Arm; Core Sub-Architecture:Cortex-M0+; Kit Contents:Raspberry Pi Pico Board; No. Of Bits:32Bit; Silicon Core Number:Rp2040; Silicon Manufacturer:Raspberry Pi |Raspberry-Pi RASPBERRY PI PICO
+Change Component Description : Designator=D1 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Change Component Description : Designator=D2 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Change Component Description : Designator=D3 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Change Component Description : Designator=D4 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Change Component Description : Designator=D5 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Change Component Description : Designator=D6 Old Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series New Description=Rectifier Silicon, 1000V, 1 A, DO-41 Case, Solder Leads, 1N Series | NTE Electronics Inc. 1N4007
+Added Component: Designator=C7(CAP_RCE5C1H220J0K1H03B)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RCE5C1H220J0K1H03B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "NONSTANDARD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RCE5C1H220J0K1H03B/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C8(CAP_RCE5C1H220J0K1H03B)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RCE5C1H220J0K1H03B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "NONSTANDARD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RCE5C1H220J0K1H03B/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C9(CAP_RCE5C1H220J0K1H03B)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RCE5C1H220J0K1H03B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "NONSTANDARD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RCE5C1H220J0K1H03B/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C10(CAP_RCE5C1H220J0K1H03B)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RCE5C1H220J0K1H03B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "NONSTANDARD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RCE5C1H220J0K1H03B/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C11(CAP_RCE5C1H220J0K1H03B)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RCE5C1H220J0K1H03B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "NONSTANDARD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RCE5C1H220J0K1H03B/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RCE5C1H220J0K1H03B/Murata/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=0V Pin=C7-1
+Added Pin To Net: NetName=RPI PICO JMP PIN21 Pin=C7-2
+Added Pin To Net: NetName=0V Pin=C8-1
+Added Pin To Net: NetName=RPI PICO JMP PIN22 Pin=C8-2
+Added Pin To Net: NetName=0V Pin=C9-1
+Added Pin To Net: NetName=RPI PICO JMP PIN24 Pin=C9-2
+Added Pin To Net: NetName=0V Pin=C10-1
+Added Pin To Net: NetName=RPI PICO JMP PIN25 Pin=C10-2
+Added Pin To Net: NetName=0V Pin=C11-1
+Added Pin To Net: NetName=RPI PICO JMP PIN30 Pin=C11-2
+Added Member To Class: ClassName=Controller_Schematic Member=Component C7 22pF
+Added Member To Class: ClassName=Controller_Schematic Member=Component C8 22pF
+Added Member To Class: ClassName=Controller_Schematic Member=Component C9 22pF
+Added Member To Class: ClassName=Controller_Schematic Member=Component C10 22pF
+Added Member To Class: ClassName=Controller_Schematic Member=Component C11 22pF
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J8 TSW-124-07-G-D
+Added Member To Class: ClassName=PowerSupply_Schematic Member=Component J9 SSW-124-01-X-D
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q1 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q3 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q5 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q7 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q9 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q11 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q13 2N7000
+Added Member To Class: ClassName=LogicShifters_Schematic Member=Component Q15 2N7000
